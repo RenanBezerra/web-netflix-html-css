@@ -1,29 +1,109 @@
-body{
+/* Gerais */
+body {
     background-color: #000;
 }
 
+header {
+    padding: 50px;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 0.7861519607843137) 100%);
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+}
+
+header img {
+    width: 150px;
+}
+
+.btn-custom-white {
+    background-color: #fff;
+}
+
+.btn-custom-white:hover {
+    opacity: 0.8;
+}
+
+.btn-custom-translucent {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.btn-custom-translucent:hover {
+    color: #fff;
+    opacity: 0.8;
+}
+
+/* Login */
+
 body.bg_filmes {
-    background-image: url(https://pipocasclub.com.br/wp-content/uploads/2019/10/netflix-3.jpg);
+    background-image: url(assets/background.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-header{
-    padding: 50px;
-    background: rgb(0, 0, 0);
-    background: linear-gradient(
-        0deg,
-        rgba(0,0,0,0) 0%,
-        rgba(0,0,0,0.7861519607843137) 100%
-    );
-}
 
-header img{
-    width: 150px;
-}
 
-#caixa_login{
-    background: rgba(0,0,0,0.7);
+#caixa_login {
+    background: rgba(0, 0, 0, 0.7);
     padding: 30px;
     margin-top: 150px;
+}
+
+/* Home */
+
+.menu_list {
+    list-style: none;
+    padding-left: 0;
+    padding-top: 7px;
+
+}
+
+.menu_list li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.menu_list li a {
+    color: #fff;
+}
+
+#hero {
+    height: 700px;
+    background-image: url(assets/hero.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+}
+
+#hero_infos {
+    padding: 0;
+    margin-top: 170px;
+    z-index: 3;
+    position: relative;
+}
+
+#hero_infos img.logo {
+    margin-bottom: 50px;
+    width: 500px;
+}
+
+#hero_infos h1 {
+    margin-bottom: 20px;
+}
+
+#logo-netflix {
+    margin-top: -50px;
+}
+
+#hero_infos h1 img {
+    width: 55px;
+    margin-top: -10px;
+    margin-left: 15px;
 }
