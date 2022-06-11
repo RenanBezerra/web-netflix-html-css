@@ -1,0 +1,29 @@
+body{
+    background-color: #000;
+}
+
+body.bg_filmes {
+    background-image: url(https://pipocasclub.com.br/wp-content/uploads/2019/10/netflix-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header{
+    padding: 50px;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+        0deg,
+        rgba(0,0,0,0) 0%,
+        rgba(0,0,0,0.7861519607843137) 100%
+    );
+}
+
+header img{
+    width: 150px;
+}
+
+#caixa_login{
+    background: rgba(0,0,0,0.7);
+    padding: 30px;
+    margin-top: 150px;
+}
